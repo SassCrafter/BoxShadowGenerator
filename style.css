@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+:root {
+	--offset-x: 5px;
+	--offset-y: 5px;
+	--blur: 5px;
+	--spread: 0px;
+	--color: rgba(0,0,0, var(--opacity));
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.4;
+	background: white;
+	color: #333;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 3rem;
+}
+
+
+.text {
+	max-width: 60rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.large {
+	font-size: 3rem;
+	line-height: 1.2;
+	margin-bottom: 3rem;
+}
+
+.lead {
+	font-size: 1.8rem;
+	color: rgba(0,0,0, .75);
+	margin-bottom: 2rem;
+}
+
+.box {
+	width: 80%;
+	height: 10rem;
+	background: #475C6C;
+	margin: 5rem auto;
+	box-shadow: var(--offset-x) var(--offset-y) var(--blur) var(--spread) var(--color);
+}
+
+
+.controls h3 {
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+
+.controls label {
+	display: block;
+	font-size: 1.8rem;
+	text-transform: capitalize;
+}

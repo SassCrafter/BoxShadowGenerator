@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Box Shadow</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="text">
+			<h1 class="large">CSS3 Box Shadow Generator</h1>
+			<p class="lead">Use this box shadow generator to quickly generate box shadow for your project</p>
+		</div>
+		<div class="box"></div>
+		<div class="controls">
+			<h3 class='controls-title'>main settings</h3>
+			<div class="controls-group">
+				<label for="inset">inset</label>
+			    <input type="checkbox" name="inset" id="inset">
+			</div>
+			<div class="controls-group">
+				<label for="x">offset-x</label>
+				<input type="range" name="x" id="offset-x" min='-75' max='75' value='5' data-sizing='px'>
+			</div>
+			<div class="controls-group">
+				<label for="y">offset-y</label>
+				<input type="range" name="y" id="offset-y" min='-75' max='75' value='5' data-sizing='px'>
+			</div>
+			<div class="controls-group">
+				<label for="blur">blur-radius</label>
+				<input type="range" name="blur" id="blur" min='-75' max='75' value='5' data-sizing='px'>
+			</div>
+			<div class="controls-group">
+				<label for="spread">spread radius</label>
+				<input type="range" name="spread" id="spread" min='-75' max='75' value='5' data-sizing='px'>
+			</div>
+			<div class="controls-group">
+				<label for="opacity">opacity</label>
+				<input type="range" name="opacity" id="opacity" min='0' max='1' value='1' data-sizing='px'>
+			</div>
+			<div class="controls-group">
+				<label for="color">color</label>
+				<input type="color" name="color" id="color">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
